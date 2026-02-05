@@ -83,7 +83,7 @@ const [orders, setOrders] = useState<Order[]>([]);
         <select className="border p-2 rounded" value={paymentMethod} onChange={(e) => setPaymentMethod(e.target.value)}>
           <option value="">All Payments</option>
           <option value="COD">COD</option>
-          <option value="ONLINE">Online</option>
+          <option value="RAZORPAY">Online</option>
         </select>
 
         <select className="border p-2 rounded" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
