@@ -157,6 +157,7 @@ const CATEGORIES = [
   "home-decoration",
   "guruji-event-decoration",
   "customise-designs",
+  "bestseller"
 ];
 
 const PAGE_SIZE = 8;
