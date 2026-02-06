@@ -45,7 +45,7 @@ export default API;
 
 // Get all products (Admin)
 export const getAllProducts = async () => {
-  const res = await API.get("/products");
+  const res = await API.get("/products/admin");
   return res.data;
 };
 
