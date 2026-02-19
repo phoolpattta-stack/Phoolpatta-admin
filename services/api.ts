@@ -44,11 +44,20 @@ export default API;
 ========================= */
 
 // Get all products (Admin)
-export const getAllProducts = async () => {
-  const res = await API.get("/products/admin");
+// export const getAllProducts = async () => {
+//   const res = await API.get("/products/admin");
+//   return res.data;
+// };
+export const getAllProducts = async (
+  page = 1,
+  limit = 10,
+  category = "all"
+) => {
+  const res = await API.get(
+    `/products/admin?page=${page}&limit=${limit}&category=${category}`
+  );
   return res.data;
 };
-
 // Get single product by ID
 export const getProductById = async (id: string) => {
   const res = await API.get(`/products/${id}`);
