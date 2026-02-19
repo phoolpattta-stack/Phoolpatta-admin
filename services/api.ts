@@ -90,6 +90,12 @@ export const toggleProductStatus = async (id: string) => {
   return res.data;
 };
 
+export const deleteProduct = async (id: string) => {
+  const res = await API.delete(`/products/${id}`);
+  return res.data;
+};
+
+
 
 /* =========================
    USER MANAGEMENT APIS
