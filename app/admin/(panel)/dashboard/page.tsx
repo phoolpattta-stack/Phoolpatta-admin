@@ -5,7 +5,7 @@ import { getAdminDashboardStats } from "@/services/api";
 
 export default function AdminDashboardPage() {
   const [stats, setStats] = useState<any>(null);
-  const [range, setRange] = useState("today");
+  const [range, setRange] = useState("lifetime");
   const [loading, setLoading] = useState(true);
 
   const fetchStats = async () => {
@@ -37,6 +37,8 @@ export default function AdminDashboardPage() {
           <option value="today">Today</option>
           <option value="7d">Last 7 Days</option>
           <option value="30d">Last 30 Days</option>
+          <option value="lifetime">Lifetime</option>
+
         </select>
       </div>
 
